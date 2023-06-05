@@ -182,7 +182,8 @@ export const APIProvider = ({ children }: { children: React.ReactNode }) => {
       newApi.consts.babe.epochDuration,
       newApi.consts.balances.existentialDeposit,
       newApi.consts.staking.historyDepth,
-      newApi.consts.fastUnstake.deposit,
+      // TODO: source code disabled for unsupported features
+      // newApi.consts.fastUnstake.deposit,
       newApi.consts.nominationPools.palletId,
     ]);
 
@@ -223,11 +224,13 @@ export const APIProvider = ({ children }: { children: React.ReactNode }) => {
       ? new BigNumber(rmCommas(result[8].toString()))
       : new BigNumber(0);
 
-    const fastUnstakeDeposit = result[9]
-      ? new BigNumber(rmCommas(result[9].toString()))
-      : new BigNumber(0);
+    // const fastUnstakeDeposit = result[9]
+    //   ? new BigNumber(rmCommas(result[9].toString()))
+    //   : new BigNumber(0);
 
-    const poolsPalletId = result[10] ? result[10].toU8a() : new Uint8Array(0);
+    const fastUnstakeDeposit = new BigNumber(0);
+
+    const poolsPalletId = result[9] ? result[9].toU8a() : new Uint8Array(0);
 
     setApi(newApi);
     setConsts({

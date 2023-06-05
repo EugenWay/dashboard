@@ -1,3 +1,4 @@
+/* eslint-disable no-unreachable */
 // Copyright 2023 @paritytech/polkadot-staking-dashboard authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
@@ -9,6 +10,9 @@ export const useUnitPrice = () => {
   const { network } = useApi();
 
   const fetchUnitPrice = async () => {
+    // TODO: source code disabled for unsupported features
+    return { lastPrice: 0, change: 0 };
+
     const urls = [
       `${ApiEndpoints.priceChange}${NetworkList[network.name].api.priceTicker}`,
     ];
