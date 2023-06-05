@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import { Entry } from '@polkadotcloud/core-ui';
+import type { Network } from '@polkadotcloud/core-ui/types';
 import { Router } from 'Router';
 import { APIProvider, useApi } from 'contexts/Api';
 import { BalancesProvider } from 'contexts/Balances';
@@ -47,7 +48,7 @@ export const ThemedRouter = () => {
 
   return (
     <ThemeProvider theme={{ mode, network: `${network.name}-${mode}` }}>
-      <Entry mode={mode} network={network.name}>
+      <Entry mode={mode} network={network.name as Network}>
         <Router />
       </Entry>
     </ThemeProvider>

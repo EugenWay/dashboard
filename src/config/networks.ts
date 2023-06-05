@@ -68,6 +68,61 @@ export const NetworkList: Networks = {
       stakeTarget: 0.75,
     },
   },
+
+  vara: {
+    name: 'vara',
+    endpoints: {
+      rpc: 'wss://vara-mini-dev.vara-network.io',
+      lightClient: WellKnownChain.polkadot,
+    },
+    namespace: '6d40a0a65cc4cc27a137d8040465daae',
+    colors: {
+      primary: {
+        light: 'rgb(211, 48, 121)',
+        dark: 'rgb(211, 48, 121)',
+      },
+      secondary: {
+        light: '#552bbf',
+        dark: '#6d39ee',
+      },
+      stroke: {
+        light: 'rgb(211, 48, 121)',
+        dark: 'rgb(211, 48, 121)',
+      },
+      transparent: {
+        light: 'rgb(211, 48, 121, 0.05)',
+        dark: 'rgb(211, 48, 121, 0.05)',
+      },
+      pending: {
+        light: 'rgb(211, 48, 121, 0.33)',
+        dark: 'rgb(211, 48, 121, 0.33)',
+      },
+    },
+    subscanEndpoint: 'https://polkadot.api.subscan.io',
+    unit: 'DOT',
+    units: 10,
+    ss58: 0,
+    brand: {
+      icon: PolkadotIconSVG,
+      logo: {
+        svg: PolkadotLogoSVG,
+        width: '7.2em',
+      },
+      inline: {
+        svg: PolkadotInlineSVG,
+        size: '1.05em',
+      },
+    },
+    api: {
+      unit: 'DOT',
+      priceTicker: 'DOTUSDT',
+    },
+    params: {
+      ...DefaultParams,
+      stakeTarget: 0.75,
+    },
+  },
+
   kusama: {
     name: 'kusama',
     endpoints: {
