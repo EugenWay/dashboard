@@ -9,6 +9,9 @@ import { ReactComponent as KusamaLogoSVG } from 'img/kusama_logo.svg';
 import { ReactComponent as PolkadotIconSVG } from 'img/polkadot_icon.svg';
 import { ReactComponent as PolkadotInlineSVG } from 'img/polkadot_inline.svg';
 import { ReactComponent as PolkadotLogoSVG } from 'img/polkadot_logo.svg';
+import { ReactComponent as VaraIconSVG } from 'img/vara_icon.svg';
+import { ReactComponent as VaraInlineSVG } from 'img/vara_inline.svg';
+import { ReactComponent as VaraLogoSVG } from 'img/vara_logo.svg';
 import { ReactComponent as WestendIconSVG } from 'img/westend_icon.svg';
 import { ReactComponent as WestendInlineSVG } from 'img/westend_inline.svg';
 import { ReactComponent as WestendLogoSVG } from 'img/westend_logo.svg';
@@ -78,39 +81,39 @@ export const NetworkList: Networks = {
     namespace: '6d40a0a65cc4cc27a137d8040465daae',
     colors: {
       primary: {
-        light: 'rgb(211, 48, 121)',
-        dark: 'rgb(211, 48, 121)',
+        light: 'rgb(0, 179, 135)',
+        dark: 'rgb(0, 179, 135)',
       },
       secondary: {
         light: '#552bbf',
         dark: '#6d39ee',
       },
       stroke: {
-        light: 'rgb(211, 48, 121)',
-        dark: 'rgb(211, 48, 121)',
+        light: 'rgb(0, 179, 135)',
+        dark: 'rgb(0, 179, 135)',
       },
       transparent: {
-        light: 'rgb(211, 48, 121, 0.05)',
-        dark: 'rgb(211, 48, 121, 0.05)',
+        light: 'rgb(0, 179, 135, 0.05)',
+        dark: 'rgb(0, 179, 135, 0.05)',
       },
       pending: {
-        light: 'rgb(211, 48, 121, 0.33)',
-        dark: 'rgb(211, 48, 121, 0.33)',
+        light: 'rgb(0, 179, 135, 0.33)',
+        dark: 'rgb(0, 179, 135, 0.33)',
       },
     },
     subscanEndpoint: 'https://polkadot.api.subscan.io',
-    unit: 'DOT',
+    unit: 'VARA',
     units: 10,
-    ss58: 0,
+    ss58: 137,
     brand: {
-      icon: PolkadotIconSVG,
+      icon: VaraIconSVG,
       logo: {
-        svg: PolkadotLogoSVG,
-        width: '7.2em',
+        svg: VaraLogoSVG,
+        width: '2.5em',
       },
       inline: {
-        svg: PolkadotInlineSVG,
-        size: '1.05em',
+        svg: VaraInlineSVG,
+        size: '1.35em',
       },
     },
     api: {

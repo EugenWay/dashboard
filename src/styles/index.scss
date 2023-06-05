@@ -1,6 +1,38 @@
 // Copyright 2023 @paritytech/polkadot-staking-dashboard authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
+:root {
+  .theme-vara {
+    --network-color-primary-light: #00b387;
+    --network-color-primary-dark: #00b387;
+    --network-color-secondary-light: #552bbf;
+    --network-color-secondary-dark: #6d39ee;
+    --network-color-stroke-light: #00b387;
+    --network-color-stroke-dark: #00b387;
+    --network-color-transparent-light: rgb(0 179 135/5%);
+    --network-color-transparent-dark: rgb(0 179 135/5%);
+    --network-color-pending-light: rgba(0, 179, 135, 0.5);
+    --network-color-pending-dark: rgba(0, 179, 135, 0.5);
+
+    --background-default: #f5f7f7;
+    --background-primary: #fff;
+    --gradient-background: linear-gradient(
+      180deg,
+      #f5f7f7,
+      #f5f7f7 100px,
+      #eeeeee 80%,
+      rgba(0, 255, 196, 0.025)
+    );
+
+    --background-app-footer: radial-gradient(
+        42.35% 52.35% at 50.87% 70.86%,
+        rgba(0, 255, 196, 0.05) 0%,
+        rgba(0, 255, 196, 0) 100%
+      )
+      rgba(36, 38, 37, 0.05);
+  }
+}
+
 html {
   font-size: 10.5px;
   @media (min-width: 600px) {
