@@ -6,7 +6,7 @@ import { Community } from 'pages/Community';
 import { Nominate } from 'pages/Nominate';
 import { Overview } from 'pages/Overview';
 import { Payouts } from 'pages/Payouts';
-import { Pools } from 'pages/Pools';
+// import { Pools } from 'pages/Pools';
 import { Validators } from 'pages/Validators';
 import type { PageCategoryItems, PagesConfigItems } from 'types';
 
@@ -34,14 +34,15 @@ export const PagesConfig: PagesConfigItems = [
     Entry: Overview,
     lottie: 'globe',
   },
-  {
-    category: 2,
-    key: 'pools',
-    uri: `${BaseURL}/pools`,
-    hash: '/pools',
-    Entry: Pools,
-    lottie: 'groups',
-  },
+  // TODO: source code disabled for unsupported features
+  // {
+  //   category: 2,
+  //   key: 'pools',
+  //   uri: `${BaseURL}/pools`,
+  //   hash: '/pools',
+  //   Entry: Pools,
+  //   lottie: 'groups',
+  // },
   {
     category: 2,
     key: 'nominate',
