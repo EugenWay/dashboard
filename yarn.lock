@@ -2445,10 +2445,10 @@ eslint-plugin-jsx-a11y@^6.7.1:
     object.fromentries "^2.0.6"
     semver "^6.3.0"
 
-eslint-plugin-prefer-arrow-functions@^3.1.4:
-  version "3.1.4"
-  resolved "https://registry.npmjs.org/eslint-plugin-prefer-arrow-functions/-/eslint-plugin-prefer-arrow-functions-3.1.4.tgz#a0761c7a0ba71461f6b2136fdf7f7cec1c82d778"
-  integrity sha512-LSO8VibqBKqzelr+L21mEIfachavCon+1SEumCJ6U8Ze2q0pntyojmomcVwd9RZBjrP+HV6k1Osz0B3Xwdq8WA==
+eslint-plugin-prefer-arrow-functions@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prefer-arrow-functions/-/eslint-plugin-prefer-arrow-functions-3.3.1.tgz#95213c7ed72aa72bda214ed30fb0c2a877beb86a"
+  integrity sha512-9vHL+dgOv3CjptF61F5el973Gw+QmUAlmqBnXYaVz9zz1q4pFwD4Vp1cKmZawtm/unAAo1KDAKrIFjarKqfMMg==
 
 eslint-plugin-prefer-arrow@^1.2.3:
   version "1.2.3"
